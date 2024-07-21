@@ -78,7 +78,7 @@ const generateSharableLink = async (req, res) => {
                 message: "Invalid File ID",
             });
         }
-        const sharableLink = `/file/downloads/${req.params.fileid}`;
+        const sharableLink = `/file/download/${req.params.fileid}`;
         res.json({
             success: true,
             message: "File sharable link generated successfully",
